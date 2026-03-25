@@ -1,0 +1,58 @@
+:root {
+  --arrow-bg: rgba(0, 0, 0, 0.5);
+  --arrow-color: #fff;
+}
+
+.carousel {
+  padding: 2rem 2rem 4rem;
+}
+
+.carousel__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.carousel__wrapper {
+  position: relative;
+}
+
+.carousel__container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+}
+
+.carousel__container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--arrow-bg);
+  color: var(--arrow-color);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carousel__arrow.left {
+  left: 0;
+}
+
+.carousel__arrow.right {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel__title {
+    font-size: 1.25rem;
+  }
+}

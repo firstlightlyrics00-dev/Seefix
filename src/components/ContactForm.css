@@ -1,0 +1,38 @@
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.contact-form__group input,
+.contact-form__group textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.contact-form__submit {
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form__submit:hover {
+  opacity: 0.95;
+}
